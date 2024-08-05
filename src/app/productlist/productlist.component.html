@@ -1,0 +1,9 @@
+<section class="product-list-container">
+    @for (product of productlist; track product.id){
+    <app-product [product]="product"
+    [id]="product.id"
+    />
+    } 
+   
+    
+  </section>
