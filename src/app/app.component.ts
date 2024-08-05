@@ -7,6 +7,7 @@ import { ProductlistComponent } from './productlist/productlist.component';
 
 
 export interface Iproduct{
+    then(arg0: (data: Iproduct) => void): unknown;
     id: string,
     name: string,
     description: string,
