@@ -21,7 +21,7 @@ export class ProductService {
   
  getProductById(id: string) {
     return fetch(
-      `https://66b0aca46a693a95b539b8b7.mockapi.io/products/${id}`
+      `https://66b0ad8a6a693a95b539bd95.mockapi.io/ecommerce/${id}`
     ).then((res) => res.json());
   }
  

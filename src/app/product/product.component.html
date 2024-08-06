@@ -1,32 +1,38 @@
-<div class="product-container">
+<mat-card class="product-container">
 
     <img src="{{ product.image }}" alt="img" class="image" />
     <div class="containerr3">
         <!-- <button (click)="info()">info></button> -->
        <!-- <button  mat-icon-button routerLink="/productdetails/{{id}}">product-details</button> -->
-       <button
-          mat-icon-button
-          aria-label="Details of product"
-          routerLink="/productdetails/{{ id }}"
-        >
-          <mat-icon>info</mat-icon>
-        </button>
+       
         
     <div class="container1">
+      <div class="name-container">
         <p>{{ product.name}}</p>
         <!-- <p>{{ product.quantity }}</p> -->
+      </div>
+        <button
+        mat-icon-button
+        aria-label="Details of product"
+        routerLink="/productdetails/{{ id }}"
+      >
+        <mat-icon>info</mat-icon>
+      </button>
    
     </div>
     <div class="container2">
-    <p>quantity:{{ product.quantity }}</p>
+    <p><b>quantity</b>:{{ product.quantity }}</p>
     
     </div>
     <div class="container3">
-    <p>price:{{product.price}}</p>
-     </div>
-     
+    <p><b>price</b>:{{product.price}}</p>
+      <div class="cart-container">
+        <button routerLink="/cart/{{ id }}"><i class="fa-solid fa-cart-plus"></i>
+      </button>
+    </div> 
     
+     </div>
     
     </div>
     
-
+</mat-card>
